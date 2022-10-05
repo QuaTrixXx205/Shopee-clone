@@ -139,7 +139,23 @@
                 </div>
 
                 <div class="header__search">
-                    <input type="text" class="header__search-input" placeholder="Tìm kiếm sản phẩm">
+                    <!-- Search history -->
+                    <div class="header__search-wrapper">
+                        <input type="text" class="header__search-input" placeholder="Tìm kiếm sản phẩm">
+                        
+                        <div class="header__search-history">
+                            <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                            <ul class="header__search-list">
+                                <li class="header__search-history-item">
+                                    <a href="">Bàn phím RGB</a>
+                                </li>
+                                <li class="header__search-history-item">
+                                    <a href="">Logitech G502</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
                     <div class="header__search-select">
                         <span class="header__search-select-label">Trong shop</span>
                         <i class="header__search-select-icon fa-solid fa-chevron-down"></i>
@@ -161,8 +177,85 @@
                     </button>
                 </div>
 
+                <!-- Cart layout -->
                 <div class="header__cart">
-                    <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                    <div class="header__card-wrapper">
+                        <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                        
+
+                        <!-- No cart: header__cart--no-cart -->
+                        <!-- Has cart: header__cart--has-cart -->
+                        <div class="header__cart-list header__cart--no-cart">
+                            <span class="header__cart-number">3</span>
+                            <img src="./assets/img/no-item-found-here.png" alt="" class="header__cart-no-cart-img">
+
+                            <h3 class="header__cart-heading">Sản phẩm đã thêm</h3>
+                            <ul class="header__cart-list-item">
+                                <!-- Cart item -->
+                                <li class="header__cart-item">
+                                    <img src="./assets/img/products/BenQ.jpg" alt="" class="header__cart-img">
+                                    <div class="header__cart-item-info">
+                                        <div class="header__cart-item-head">
+                                            <h5 class="header__cart-item-name">Màn hình BenQ</h5>
+                                            <div class="header__cart-item-price-wrap">
+                                                <span class="header__cart-item-price">14.000.000đ</span>
+                                                <span class="header__cart-item-multiply">x</span>
+                                                <span class="header__cart-item-quantity">3</span>
+                                            </div>
+                                        </div>
+                                        <div class="header__cart-item-body">
+                                            <span class="header__cart-item-desc">
+                                                Màn hình máy tính
+                                            </span>
+                                            <span class="header__cart-item-remove">xóa</span>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="header__cart-item">
+                                    <img src="./assets/img/products/RGB_Kb.jpg" alt="" class="header__cart-img">
+                                    <div class="header__cart-item-info">
+                                        <div class="header__cart-item-head">
+                                            <h5 class="header__cart-item-name">Bàn phím cơ RGB</h5>
+                                            <div class="header__cart-item-price-wrap">
+                                                <span class="header__cart-item-price">5.000.000đ</span>
+                                                <span class="header__cart-item-multiply">x</span>
+                                                <span class="header__cart-item-quantity">1</span>
+                                            </div>
+                                        </div>
+                                        <div class="header__cart-item-body">
+                                            <span class="header__cart-item-desc">
+                                                Phím cơ màu mè bắt mắt
+                                            </span>
+                                            <span class="header__cart-item-remove">xóa</span>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="header__cart-item">
+                                    <img src="./assets/img/products/rtx_3090.jpg" alt="" class="header__cart-img">
+                                    <div class="header__cart-item-info">
+                                        <div class="header__cart-item-head">
+                                            <h5 class="header__cart-item-name">Card NVIDIA</h5>
+                                            <div class="header__cart-item-price-wrap">
+                                                <span class="header__cart-item-price">24.000.000đ</span>
+                                                <span class="header__cart-item-multiply">x</span>
+                                                <span class="header__cart-item-quantity">2</span>
+                                            </div>
+                                        </div>
+                                        <div class="header__cart-item-body">
+                                            <span class="header__cart-item-desc">
+                                                RTX 3090
+                                            </span>
+                                            <span class="header__cart-item-remove">xóa</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                                <button class="btn btn--primary btn-see-cart">Xem giỏ hàng</button>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
