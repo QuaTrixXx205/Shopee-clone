@@ -12,12 +12,92 @@
     list-style: none;
     padding-left: 0;
     margin: 6px 0 0 0;
+    display: flex;
+    z-index: 1;
 }
 
 .header__navbar-item{
     margin: 0 8px;
     position: relative;
     min-height: 18px;
+}
+
+.header__navbar-user{
+    display: flex;
+    position: relative;
+}
+
+.header__navbar-user-img{
+    width: 22px;
+    height: 22px;
+}
+
+.header__navbar-user-name{
+    margin-left: 8px;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.navbar__user-menu{
+    position: absolute;
+    z-index: 2;
+    padding-left: 0;
+    top: calc(100% + 12px);
+    right: 0;
+    background-color: var(--white-color);
+    border-radius: 2px;
+    list-style: none;
+    width: 180px;
+    box-shadow: 0 2px 5px rgb(186, 186, 186);
+    display: none;
+}
+
+.header__navbar-user:hover .navbar__user-menu{
+    display: block;
+}
+
+.navbar__user-menu::before{
+    content: "";
+    position: absolute;
+    display: block;
+    border: 20px solid;
+    border-width: 15px 20px;
+    border-color: transparent transparent var(--white-color) transparent;
+    top: -30px;
+    right: 30px;
+}
+
+.navbar__user-menu::after{
+    content: "";
+    position: absolute;
+    display: block;
+    border: 16px solid;
+    width: 120px;
+    border-color:transparent;
+    top: -31px;
+    right: 0;
+}
+
+.navbar__user-item a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    display: block;
+    padding: 8px 16px;
+}
+
+.navbar__user-item a:hover{
+    background-color: rgb(241, 240, 240);
+}
+
+.navbar__user-item a:first-child{
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.navbar__user-item a:last-child{
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
 }
 
 .header__navbar-item--qr-show:hover .header__qr{
@@ -419,7 +499,7 @@
     animation: fadeIn ease 0.3s;
 }
 
-.header__cart-icon:hover ~ .header__cart-list{
+.header__card-wrapper:hover ~ .header__cart-list{
     display: block;
 }
 
@@ -443,9 +523,10 @@
     background-color: var(--white-color);
     border-radius: 50%;
     color: var(--primary-color);
-    top: -50px;
+    top: -15px;
     right: -1px;
     border: 2px solid var(--primary-color);
+    /* display: none; */
 }
 
 .header__cart--no-cart .header__cart-no-cart-img{
@@ -458,6 +539,9 @@
 .header__cart--no-cart .header__cart-number{
     display: none;
 }
+
+
+
 
 
 
