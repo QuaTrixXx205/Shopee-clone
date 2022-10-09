@@ -507,6 +507,7 @@
     height: 220px;
     cursor: default;
     animation: fadeIn ease 0.3s;
+    z-index: 1;
 }
 
 .header__card-wrapper:hover ~ .header__cart-list{
@@ -779,6 +780,7 @@
     border-radius: 3px;
     box-shadow: 0 0 5px #ccc;
     display: none;
+    z-index: 1;
 }
 
 .header__search-history-heading{
