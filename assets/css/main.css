@@ -577,9 +577,9 @@ html{
 }
 
 .header__cart--has-cart{
-    box-shadow: 0 4px 5px #ccc;
-    min-height: auto;
     padding: 8px;
+    box-shadow: 0 4px 5px #ccc;
+    height: auto;
 }
 
 .header__cart-item{
