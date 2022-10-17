@@ -8,9 +8,10 @@
     --text-color: #333;
     --border-color: #dbdbdb;
     --star-gold: #FFCE3E;
+    --header-sort-bar-height: 46px;
 
-    --navbar-height: 34px;
     --header-height: 120px;
+    --navbar-height: 34px;
     /* Header height - navbar height = header-with-search height */
     --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
 }
@@ -28,16 +29,16 @@ html {
 
 /* Responsive */
 /* nếu kích thước tối đa của màn hình hơn 1200px thì kích thước của nó định sẵn sẽ chỉ là 1200px. Nhưng nếu màn hình có kích thước nhỏ hơn 1200px thì thuộc tính max-width sẽ giảm kích thước của grid = kích thước của màn hình dưới 1200px. margin căn giữa */
-.grid{
+/* .grid{
     width: 1200px;
     max-width: 100%;
     margin: 0 auto;   
-}
+} */
 
 /* Trong trường hợp không muốn sử dụng width là 1200px */
-.grid__full-width{
+/* .grid__full-width{
     width: 100%;
-}
+} */
 
 /* thẻ nằm trong class này sẽ nằm trên hàng ngang, flexwrap dùng để đẩy các thẻ con xuống hàng khi chiều ngang của thẻ con vượt quá so với grid__row */
 .grid__row{
