@@ -578,7 +578,8 @@ html{
 
 .header__cart--has-cart{
     box-shadow: 0 4px 5px #ccc;
-    height: 300px;
+    min-height: auto;
+    padding: 8px;
 }
 
 .header__cart-item{
