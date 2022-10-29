@@ -505,6 +505,15 @@ html{
     margin: 0 8px;
 }
 
+.header__checkbox-mobile:checked ~ .header__search{
+    display: flex;
+}
+
+.header__mobile-search-icon {
+    font-size: 2.6rem;
+    color: var(--white-color);
+}
+
 .header__logo{ 
     width: 200px;
 }
