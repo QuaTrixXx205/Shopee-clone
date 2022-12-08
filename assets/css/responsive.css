@@ -42,6 +42,15 @@
     .header__sort-bar{
         display: flex;
     }
+
+    .app__content{
+        padding-top: 8px;
+    }
+
+    .mobile-category{
+        display: block;
+    }
+    
     
 }
 
@@ -111,5 +120,32 @@
             top: var(--header-height);
         }
     }
+
+    .pagination-item{
+        margin: 0;
+        padding-left: 0;
+    }
+
+    .pagination-item__link{
+        --height: 28px;
+        font-size: 1.6rem;
+        min-width: 35px;
+    }
+
+    .app__content{
+        margin: 0 4px;
+    }
+
+    .header__mobile-search{
+        display: block;
+    }
+
+    .header__logo-img{
+        width: 110px;
+    }
+
+   .footer-content{
+    padding: 0 24px;
+   }
 
 }

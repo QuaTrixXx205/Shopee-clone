@@ -2,6 +2,10 @@ html{
     scroll-behavior: smooth;
 }
 
+.app{
+    overflow: hidden;
+}
+
 .header{
     height: var(--header-height);
     background-image: linear-gradient(0, #fe6233, #f7482f); 
@@ -209,6 +213,7 @@ html{
 
 .header__sort-item--active .header__sort-link{
     color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
 }
 .header__sort-item:first-child .header__sort-link::after{
     display: none;
@@ -509,6 +514,10 @@ html{
     display: flex;
 }
 
+.header__mobile-search{
+    display: none;
+}
+
 .header__mobile-search-icon {
     font-size: 2.6rem;
     color: var(--white-color);
@@ -547,6 +556,7 @@ html{
     display: inline-block;
     padding: 2px 8px;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .header__card-wrapper:hover .header__cart-list{
@@ -949,6 +959,66 @@ html{
     color: var(--primary-color);
 }
 
+/* Mobile Category */
+.mobile-category{
+    display: none;
+}
+
+.mobile-category__list{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.mobile-category__list::-webkit-scrollbar{
+    display: none;
+}
+
+.mobile-category__item:nth-of-type(3n) .mobile-category__link
+{
+    background-color: orange;
+}
+
+.mobile-category__item:nth-of-type(3n + 1) .mobile-category__link
+{
+    background-color: rgb(255, 72, 0);
+}
+
+.mobile-category__item:nth-of-type(3n + 2) .mobile-category__link
+{
+    background-color: rgb(0, 157, 255);
+}
+
+
+
+.mobile-category__item{
+    flex-shrink: 0;
+    margin: 10px;
+}
+
+.mobile-category__link{
+    --line-height: 2rem;
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 1.4rem;
+    line-height: var(--line-height);
+    text-align: center;
+    width: 110px;
+    height: calc(var(--line-height) * 2);
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    border-radius: 5px;
+    font-weight: 300;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    padding: 0 16px;
+}
+
 /* Home sort + filter */
 .home-filter{
     background-color: rgba(0,0,0,0.04);
@@ -1223,7 +1293,9 @@ i.home-product__liked-icon{
 
 .home-product__pagination{
     margin: 50px 0 30px 0;
+    padding-left: 0;
 }
+
 
 
 /* Footer */
